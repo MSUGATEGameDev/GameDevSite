@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>GATE GameDev</title>
+		<title>GATE GameDev - Environment</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -36,10 +36,7 @@
 												<a href="#github" class="scrolly">GitHub</a>
 											</li>
 											<li>
-												<a href="#unity" class="scrolly">Unity</a>
-											</li>
-											<li>
-												<a href="#vs" class="scrolly">Visual Studio</a>
+												<a href="#unity" class="scrolly">Unity & Visual Studio</a>
 											</li>
 											<li>
 												<a href="#blender" class="scrolly">Blender</a>
@@ -68,19 +65,135 @@
 						<section class="wrapper style5">
 							<div class="inner">
 								<h3 id="github">GitHub</h3>
-								<p>GitHub is a website that provides easy-to-use <a href="https://en.wikipedia.org/wiki/Version_control">version control</a>, backup, and collaboration. It is completely free for most project sizes.</p>
-								<hr />
-								
-								<h3 id="unity">Unity</h3>
-								<p></p>
+								<p>
+									GitHub is a website that provides easy-to-use <a href="https://en.wikipedia.org/wiki/Version_control">version control</a>, backup, and collaboration. It is completely free for small-to-midsized projects.
+								</p>
+								<ol>
+									<li>
+										If you don't already have a GitHub account, <a href="https://github.com/signup">sign up for one on their website</a>.
+									</li>
+									<li>
+										<a href="https://desktop.github.com/download/">Download GitHub Desktop</a> to your computer.
+									</li>
+									<li>Sign in to GitHub Desktop with your GitHub account.</li>
+									<li>
+										In your web browser, go to <a href="https://github.com/orgs/MSUGATEGameDev/repositories">https://github.com/orgs/MSUGATEGameDev/repositories</a> and find the project you want to work on.<br>
+
+											</li>
+									<li>
+										Select the project you want and click the big green <b>Code</b> button in the top-right. Copy the HTTPS URL provided.<br>
+										<div class="image">
+											<img src="images/setup/geturl.png" alt="" />
+										</div>
+									</li>
+									<li>
+										Back in GitHub Desktop, go to <b>File > Clone Repository</b>, select <b>URL</b>, and paste in the URL from your project.<br>
+											Ensure the local path is a location that works well for you. The default location of Documents\GitHub is usually good.
+										</br>
+										<div class="image">
+											<img src="images/setup/clonerepo.png" alt="" />
+										</div>
+										<br>
+										This will create a local folder on your computer that GitHub will sync with the online folder (called a <b>Repository</b> or <b>Repo</b>) whenever you tell it to.
+									</li>
+									<li>
+										Your project folder will take a minute or so to download, but it is only downloading the parts of the project that are unique to the project and will not be automatically re-created when it's opened in the editor.
+									</li>
+
+								</ol>
 								<hr />
 
-								<h3 id="vs">Visual Studio</h3>
-								<p></p>
+								<h3 id="unity">Unity & Visual Studio</h3>
+								<p>
+									<b>
+										<i>Unity</i>
+									</b> is a Game Engine that helps you combine all the elements of a video game into a cohesive product. It is, in our opinion, the most beginner-friendly of the full-featured publicly-available engines.<br>
+									It is completely free for developers who make less than $200,000 annually from games made in Unity, and costs $2,000 a year for those who make over $200,000 from Unity games in that year (at most, 1% of revenue).
+							</p>
+								<p>
+									<b>
+										<i>Visual Studio</i>
+									</b> is an IDE (Integrated Development Environment), which is essentially an advanced text editor made to help you write code.<br>
+									It has color coding, auto formatting, error detection, and auto-complete features which make it easier to write code for Unity. It comes bundled with Unity as a free add-on.
+								</p>
+								<ol>
+									<li>
+										If you do not already have a Unity account, <a href="https://login.unity.com/en/sign-up">create one on the Unity Website</a>.
+									</li>
+									<li>
+										<a href="https://unity.com/download">Download Unity from the Unity website</a>.<br>
+											This will download the <b>Unity Hub</b> to your desktop, which allows you to install various editions of the <b>Unity Editor</b> and manage your projects.
+										</li>
+									<li>Open Unity Hub, sign in, and agree to the Software License Terms.</li>
+									<li>
+										To avoid errors while we are still working on the game in class, you will need the <i>exact</i> same version of Unity Editor that is installed in the classroom, Unity 6000.3.14f1 (LTS), which can be downloaded from the Unity hub following <a href="unityhub://6000.3.14f1/d68c3f99a318">this link from the Unity website</a>.
+										<br>
+											<i>
+												(If this is after the class has ended and you want the latest features, you can open Unity Hub, go to <b>Installs</b> and select <b>Install Editor
+												</b> and you can install the recommended or latest LTS version.)
+											</i>
+										</li>
+									<li>
+										Make sure <b><i>Microsoft Visual Studio Community</i></b> is selected and click <b><i>Continue.</i></b></br>
+										Agree with the Terms of Service and click <b><i>Install</i></b>.<br>
+											The download and install will take a while. You can track the progress of the install in the Downloads section in the top right.
+								</li>
+									<li>
+										Once the editor and Visual Studio are installed, go to <b>
+											<i>Projects</i>
+										</b> and click the <b>
+											<i>Add</i>
+										</b> button in the top-right and select <b>
+											<i>Add project from disk</i>
+										</b>.<br>
+											<div class="image">
+												<img src="images/setup/addproject.png" alt="" />
+											</div>
+										</br>
+										Navigate to the folder that was created by GitHub. This will add it as a project in Unity.
+								</li>
+									<li>Open the project. Unity will need to install another 2GB+ of standard libraries used by the game, so it may take a while to open the first time.</li>
+								</ol>
+								<p>
+									As you work on your project, you will notice GitHub Desktop tracking your changes. As you reach a point where you would like to be able to save your progress and create a restore point, enter a summary and description of the changes you made and hit the <i>Commit</i> button in the bottom left.
+								</p>
+								During the week of class, these changes will need to be reviewed and approved by the instructors.</p>
 								<hr />
 								<h3 id="blender">Blender</h3>
-								<p></p>
-							
+								<p>
+									If you wish to make your own 3D models for your game or modify existing models, we highly recommend <b><i>Blender.</i></b> 
+									It is completely free, open-source, and fairly easy to use. Models made in Blender are natively supported in Unity, so you can simply drop them into your Unity project folder and use them.
+									<ol>
+										<li>
+											You can download it from <a href="https://www.blender.org/download/">blender.org</a>.
+										</li>
+										<li>
+											Blender does have one minor issue in that it defines the horizontal axes as X and Y with the vertical axis being Z, while Unity defines the horizontal axes as X and Z with the vertical axis being Y. To account for this, Unity imports Blender files at a 90-degree angle.<br>This may or may not be frustrating to work with. We've created a file in Blender with the starter cube already rotated to help design models with the same axes in mind. It is also shrunk to 1x1x1 with a corner on the origin instead of the default 2x2x2 with the origin in the center.</li>
+										<li>
+											You can find this file (Unit Cube.blend) in the project folder under <b>Assets\Visual Elements\Models\Templates</b><br>
+												In Blender, click <b>File > Defaults > Save Startup File</b> to tell it to always start with this file.
+											</li>
+									</ol>
+								</p>
+								<hr />
+								<h3 id="postClass">Continuing to Work on Your Game</h3>
+								<p>
+									After the last day of class, you are welcome to continue working on your project, but we will not continue to monitor push requests for your repos, and will eventually take them down.<br>
+									To continue your work:
+									<ol>
+										<li>Click the <i>Add</i> button in the top-right of GitHub Desktop and select <i>Create new repository</i>.</li>
+										<li>Give your new repository a name, local path, and description, but otherwise leave it blank.</li>
+										<li>In your file explorer, open the folder for the old repository and the new repository and cut & paste from the old folder to the new folder.<br>
+											<i>Make sure the .gitignore file is included in the copy.</br>
+											If you have Hidden Items visible in the file explorer, make sure you do NOT copy the .git folder. (If hidden items are not visible, it will not be copied.)</i><br>
+											If it asks about .gitattributes or any files that are open in Unity Editor, you can ignore them.
+										</br>
+											You should have about 2,000 changes listed. If there are more than 10,000, your .gitignore file probably wasn't copied correctly and you will need to make sure it has the .gitignore made for Unity or it will be too big for GitHub.	
+										</li>
+										<li>Select <i>Publish Repository</i>, give it a name and description, mark it as private if you desire, and select <i>Publish repository</i>.</li>
+									</ol>
+								</p>
+
 
 							</div>
 						</section>
