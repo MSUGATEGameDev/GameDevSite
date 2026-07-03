@@ -283,7 +283,19 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+/* Base styles for Mobile (Full width) */
+.photocont img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
+/* PC and Tablets (Half width) */
+@media (min-width: 768px) {
+    .photocont {
+        width: 50%;
+    }
+}
 /* Row */
 
 	.row {
