@@ -74,7 +74,8 @@
 							<div class="inner">
 								<h3 id="scenes">Specifying Included Scenes</h3>
 								<p>
-									The Scene List is in the Build Profiles section. Any scene not included in the scene list (even if you've playtested it in the editor) will not appear in the final game.
+									The Scene List is in the Build Profiles section. Any scene not included in the scene list (even if you've playtested it in the editor) will not appear in the final game.<br>
+										Make sure you have included all the scenes you intend for your player to use.
 								<br>
 									<div class="photocont">
 										<img src="images/setup/scenelist.png" alt="" />
@@ -85,35 +86,57 @@
 
 								<h3 id="platform">Selecting Build Platform(s)</h3>
 								<p>
-									Unity is a cross-platform engine, meaning you can build your game to almost any platform. You select the platform(s) in the Build Profiles section.<br>
+									Unity is a cross-platform engine, meaning you can build your game to almost any platform. 
+									<ul><li>You select the platform(s) in the Build Profiles section.<br>
 										<div class="photocont">
 											<img src="images/setup/buildplatforms.png" alt="" />
 										</div>
-										<br>
-									You will need to have installed the appropriate modules, which you can do from here.<br>
+										</li>
+									<li>You will need to have installed the appropriate modules, which it will prompt you to do if not done.<br>
 										<div class="photocont">
 											<img src="images/setup/modules.png" alt="" />
 										</div>
-										<br>
-										You will also want to make sure you have configured the inputs to include the inpupt devices expected on that platform (touchscreen, controller, ...etc.)<br>
-									<div class="photocont">
-										<img src="images/setup/inputs.png" alt="" />
-									</div>
+										</li>
+										<li>
+											You will also want to make sure you have configured the inputs to include the inpupt devices expected on that platform (touchscreen, controller, ...etc.)<br>
+												You shouldn't have to create new actions, just new bindings under each action if needed.<br>
+													<div class="photocont">
+														<img src="images/setup/inputs.png" alt="" />
+													</div>
+												</li>
+										</ul>
 								</p>
 								<hr />
 								<h3 id="device">Exporting to Device</h3>
-								<p>In the Build Profiles screen, if you select Build, it will compile your game into a shareable executable (or comparable file on other platforms) and save it to a location of your choosing.<br>
-										If you select Build And Run, it will build the file and start the game running on the device (on your PC if Windows is enabled, or on your Android, Meta Quest, or iPhone if you have a connected device in developer mode.)</br>
+								<p>In the Build Profiles screen:
+								<ul>
+									<li>
+										if you select Build, it will compile your game into a shareable executable (or comparable file on other platforms) and save it to a location of your choosing.<br>
+											(We recommend you save it somewhere outside your project folder like your downloads, and make sure it's contained within its own folder as it will have some extra files to install. You can keep installing over top of the previous files in the same folder when building a new version.)<br>
+												<div class="photocont">
+													<img src="images/setup/buildfolder.png" alt="" />
+												</div>
+											</li>
+										<li>If you select Build And Run, it will build the file and start the game running on the device (on your PC if Windows is enabled, or on your Android, Meta Quest, or iPhone if you have a connected device in developer mode.)</br>
 									<br>
 										<div class="photocont">
 											<img src="images/setup/buildrun.png" alt="" />
 										</div>
-										<br>
-									There are a number of factors to consider for special circumstances, but generally you get a functional game with the default settings.
+										</li>
+									<li>There are a number of factors to consider for special circumstances, but generally you get a functional game with the default settings.</li>
+										<li>It will take several minutes to build the game. (...possibly longer if it's the first time or the first time after major changes, or if you're on a less-powerful computer.)</li>
+									<li>When sharing or distributing your game, remember to remove the folder(s) marked as <i>Do Not Ship</i>. Run the main executable to play the game.<br>
+										<div class="photocont">
+											<img src="images/setup/distrofolder.png" alt="" />
+										</div>
+									</li>
+									</ol>
 								</p>
 								<hr />
 								<h3 id="distribute">Distributing Your Game</h3>
-								<p>When you're done with your game, you'll want somewhere to show it off. There are a few places. We have a guide that goes over the pros and cons of many of these storefronts.</p>
+								<p>When you're done with your game, you'll want somewhere to show it off. <ul>
+									<li>If you just want to share it with friends or put it up for free on a website, you can just zip up the folder and send it or host it anywhere.</li>
+								<li>If you want to share it publicly or sell it, there are a few places. <a href="distribution">We have a guide that goes over the pros and cons of many of these storefronts.</a></li></ul></p>
 
 
 							</div>
