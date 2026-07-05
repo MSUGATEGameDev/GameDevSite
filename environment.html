@@ -69,7 +69,7 @@
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
-<p>Below are the instructions for installing the software needed to set up your game development environment. While we wouldn't recommend you attempt this on a really old computer, for a simple game, most of this should run pretty well on a modern lower-end computer. You may just have to deal with longer load times in Unity.</p><br>
+<p>Below are the instructions for installing the software needed to set up your game development environment. While we wouldn't recommend you attempt this on a really old computer, most of this should run pretty well on a modern lower-end computer for a simple game like ours. You may just have to deal with longer load times in Unity.</p>
 								<h3 id="github">GitHub</h3>
 								<p>
 									GitHub is a website that provides easy-to-use <a href="https://en.wikipedia.org/wiki/Version_control">version control</a>, backup, and collaboration. It is completely free for small-to-midsized projects.
@@ -94,9 +94,8 @@
 									</li>
 									<li>
 										Back in GitHub Desktop, go to <i>File -> Clone Repository</i>, select <i>URL</i>, and paste in the URL from your project.<br>
-											Ensure the local path is a location that works well for you. The default location of Documents\GitHub is usually good.
-											<br>
-												This will create a local folder on your computer.
+											Ensure the local path is a location that works well for you. The default location of Documents\GitHub is usually good.<br>
+										Do NOT put it in a location that is already being backed up by another service (OneDrive, Google Drive). GitHub is already providing backup and the two systems will constantly be fighting each other.
 											</br>
 										<div class="photocont">
 											<img src="images/setup/clonerepo.png" alt="" />
@@ -106,6 +105,7 @@
 									<li>
 										Your project folder will take a minute or so to download, but it is only downloading the parts of the project that are unique to the project and will not be automatically re-created when it's opened in the editor.
 									</li></ol>
+								<h3 id="newrepo">You'll need to make a new repo</h3>
 									<p>While we will leave the <a href="definitions#repo">repo</a> publicly visible until we need to clear them for next year's class, your account will not be able to push changes back up to it.</br>
 								In order to continue to work on your project with backup and version control, you will want to create a new repo on your own account and copy the files to that repo.</p>
 								<ol>	<li>
@@ -115,11 +115,13 @@
 											<img src="images/setup/makenewrepo.png" alt="" />
 										</div>
 									</li>
+									<li>If you have Unity installed at this time, make sure it is closed.</li>
 									<li>
-										In your file explorer, open the folder for the old repository and the folder for the new repository. Select all the files and folders from the old one, and move them to the new one.<br>
+										In your file explorer, open the folder for the old repository and the folder for the new repository.</li>
+									<li>If the new (empty) repository has a file called .gitattributes, delete it.
+									<li>Select all the files and folders from the old one, and move them to the new one.<br>
 											<i>Make sure the .gitignore file is included in the copy.</br>
 										If you have Hidden Items visible in the file explorer, make sure you do NOT copy the .git folder. (If hidden items are not visible, it will not be copied.)</i><br>
-											If it asks about .gitattributes or any files that are open in Unity Editor, you can ignore them.
 											<div class="photocont">
 											<img src="images/setup/moveitall.png" alt="" />
 										</div>
@@ -127,7 +129,7 @@
 										<li>Once it's done moving the files, look at the list of changes in GitHub. You should have about 2,000 changes listed. If there are more than 10,000, your .gitignore file probably wasn't copied correctly and you will need to make sure it has the .gitignore made for Unity or it will be too big for GitHub.
 									</li>
 									<li>
-										Select <i>Publish Repository</i>, give it a name and description, mark it as private if you desire, and select <i>Publish repository</i>.
+										Select <i>Publish Repository</i>, give it a name and description, mark it as private if you desire, and select <i>Publish repository</i> again.
 									</li>
 								</ol>
 								<p>
@@ -211,7 +213,7 @@
 											You can download it from <a href="https://www.blender.org/download/">blender.org</a>
 										</li>
 										<li>
-											Blender has one minor issue in that it defines the horizontal axes as X and Y with the vertical axis being Z, while Unity defines the horizontal axes as X and Z with the vertical axis being Y. To account for this, Unity imports Blender files at a 90-degree angle.<br>This may or may not be frustrating to work with. We've created a file in Blender with the starter cube already rotated to help design models with the same axes in mind. It is also shrunk to 1x1x1 with a corner on the origin instead of the default 2x2x2 with the origin in the center.</li>
+											As your 3D design tool for Unity, Blender has one minor issue in that it defines the horizontal axes as X and Y with the vertical axis being Z, while Unity defines the horizontal axes as X and Z with the vertical axis being Y. To account for this, Unity imports Blender files at a 90-degree angle.<br>This may or may not be frustrating to work with. We've created a file in Blender with the starter cube already rotated to help design models with the same axes in mind. It is also shrunk to 1x1x1 with a corner on the origin instead of the default 2x2x2 with the origin in the center.</li>
 										<li>
 											You can find this file (Unit Cube.blend) in the project folder under <b>Assets\Visual Elements\Models\Templates</b><br>
 												In Blender, click <b>File -> Defaults -> Save Startup File</b> to tell it to always start with this file.
